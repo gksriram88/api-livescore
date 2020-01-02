@@ -1,0 +1,6 @@
+# ignore all compile file,log files
+*.pyc
+logs/
+*.log
+.vscode/
+venv/

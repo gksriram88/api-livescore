@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fixtures date="{{today}}">
+{% for match in matchData %}
+   <fixture id="{{match.id}}" away_team="{{match.teamaid}}" away_team_name="{{match.teama}}" comp_name="{{match.name}}" game_date="{{match.game_date}}" game_date_string="{{match.game_date_string}}" game_date_time="{{match.game_date_time}}" game_type_id="2" gmt_offset="1" home_team="{{match.teambid}}" home_team_name="{{match.teamb}}" time="{{match.time}}">
+      <audio id="1" language="English" url="https://securestreams2.autopo.st:1079/sportsflashes_allsports" />
+      <audio id="2" language="Hindi" url="https://securestreams2.autopo.st:1079/sportsflashes_allsports" />
+      <audio id="3" language="Punjabi" url="https://securestreams2.autopo.st:1079/sportsflashes_allsports" />
+      <audio id="4" language="Bangla" url="https://securestreams2.autopo.st:1079/sportsflashes_allsports" />
+   </fixture>
+{% endfor %}
+   <teams>
+      <team id="1" SYMID="AUS" name="Australia" />
+      <team id="2" SYMID="ENG" name="England" />
+      <team id="3" SYMID="IND" name="India" />
+      <team id="4" SYMID="NZL" name="New Zealand" />
+      <team id="5" SYMID="PAK" name="Pakistan" />
+      <team id="6" SYMID="SAF" name="South Africa" />
+      <team id="7" SYMID="SRL" name="Sri Lanka" />
+      <team id="8" SYMID="WIN" name="West Indies" />
+      <team id="9" SYMID="ZIM" name="Zimbabwe" />
+      <team id="10" SYMID="BAN" name="Bangladesh" />
+      <team id="14" SYMID="NED" name="Netherlands" />
+      <team id="15" SYMID="SCO" name="Scotland" />
+      <team id="24" SYMID="IRE" name="Ireland" />
+      <team id="93" SYMID="OMN" name="Oman" />
+      <team id="95" SYMID="AFG" name="Afghanistan" />
+      <team id="267" SYMID="PNG" name="Papua New Guinea" />
+   </teams>
+</fixtures>

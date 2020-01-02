@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:media="http://search.yahoo.com/mrss/" version="2.0">
+<channel>
+<title>
+<![CDATA[
+{{match.name}}
+]]>
+</title>
+<link>https://sportsflashes.com/en/cricket</link>
+<description>
+<![CDATA[
+{{match.description}}
+]]>
+</description>
+<language>en</language>
+{% for commentry in commentry_data%}
+<item>
+<link>http://18.220.191.122:8082/fullscorecard/{{match.id}}</link>
+<dc:creator>
+<![CDATA[ Sportsflashes ]]>
+</dc:creator>
+<category>
+<![CDATA[ cricket ]]>
+</category>
+<description>
+<![CDATA[
+{{commentry.comment}}
+]]>
+</description>
+<content:encoded>
+<![CDATA[
+{{commentry.comment}}
+]]>
+</content:encoded>
+<dc:language>English</dc:language>
+</item>
+{% endfor %}
+</channel>
+</rss>
